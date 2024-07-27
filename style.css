@@ -1,0 +1,178 @@
+:root {
+    --clr-soft-magenta: hsl(300, 69%, 71%);
+    --clr-violet: hsl(257, 40%, 49%);
+}
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    background-image: url('bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--clr-violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.container {
+    width: 80vw;
+    max-width: 1400px;
+}
+
+.logo {
+    width: 110px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+.text-and-button {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.huddle-heading {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.description {
+    margin: 0 auto 0.3rem auto;
+    font-size: 1.1rem;
+}
+
+.register-button {
+    width: 70%;
+    margin: 2.7rem auto;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 0.4rem 0;
+}
+.register-button:hover{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    margin-bottom: 1.5rem;
+}
+footer  a{
+    padding:0.4rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
+footer a:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+footer i{
+    width:30px;
+    height: 30px;
+    padding:0.4rem 0.5rem;
+}
+@media screen and (min-width:900px) {
+    body {
+        background-image: url('bg-desktop.svg');
+       
+    }
+    .container{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:4rem;
+    }
+    .logo{
+        width:40%;
+        margin-top: 0;
+    }
+  .text-and-button{
+        text-align: left;
+        width: 50%;
+    }
+    .mockup-image{
+      width: 100%;
+    }
+    .huddle-heading{
+        font-size:2.5rem;
+    }
+    .description{
+        font-size: 1.4rem;
+    }
+
+    .register-button{
+        width: 35%;
+        margin-left: 0;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    } 
+    footer{
+        margin-top: 100vh;
+    }
+
+}
